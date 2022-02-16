@@ -1,0 +1,178 @@
+body {
+  background-color: rgb(23, 37, 37);
+}
+.postButton {
+  display: block;
+  margin-top: 0.5rem;
+}
+.colFlex {
+  display: flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  width: 90%;
+  background-color: transparent;
+  overflow: auto;
+  margin-bottom: 3rem;
+  min-height: 4rem;
+  max-height: 4rem;
+}
+textarea:focus {
+  outline: none;
+}
+
+.postContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 15rem);
+  grid-gap: 0.4rem;
+}
+.note {
+  min-height: 10rem;
+  border-radius: 5%;
+  background-color: #ffc66b;
+
+  padding: 0.5rem;
+  position: relative;
+  font-size: 1rem;
+}
+.noteModal {
+  background-color: #fff06b;
+  padding: 1rem;
+  margin: 12rem;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  border: 2px solid #eec84d;
+  max-width: 30rem;
+  max-height: 20rem;
+  white-space: initial; /* makes each spaced word brake to lines*/
+  word-wrap: break-word; /* makes each word brake to lines*/
+}
+.modalText {
+  max-height: 15rem;
+  overflow: auto;
+}
+.noteText {
+  overflow: hidden;
+  white-space: initial; /* makes each spaced word brake to lines*/
+  word-wrap: break-word; /* makes each word brake to lines*/
+  max-width: 14rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.noteDate {
+  color: #000000ee;
+  font-size: small;
+}
+.noteFooter {
+  bottom: 0;
+  margin: 0.5rem;
+  font-size: smaller;
+  position: absolute;
+  width: 90%;
+}
+
+.new {
+  background-color: transparent;
+}
+.postButton {
+  width: 5rem;
+}
+.actionButton {
+  padding: 0;
+  background-color: #00000020;
+  border: none;
+  color: #00000050;
+  font-size: 7px;
+  height: 20px;
+  min-width: 30px;
+}
+.actionButton.delete:hover {
+  background-color: tomato;
+}
+.actionButton.edit:hover {
+  background-color: rgb(234, 255, 46);
+}
+
+.title {
+  border: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.title :focus {
+  outline: none;
+}
+.exitModalButtonContainer {
+  float: right;
+}
+.exitModalButton {
+  background-color: unset;
+  border: unset;
+  font-weight: 600;
+  color: #00000050;
+}
+.exitModalButton:hover {
+  color: rgb(172, 137, 25);
+}
+.colorButton {
+  background-color: rgb(234, 255, 46);
+  height: 1rem;
+  border-radius: 100%;
+  border-color: black;
+  border-style: solid;
+}
+.colorModal {
+  background-color: transparent;
+}
+.ReactModalPortal .ReactModal__Overlay.ReactModal__Overlay--after-open {
+  background-color: unset !important;
+}
+.ReactModal__Content--after-open.colorModal {
+  position: absolute;
+  margin-left: 8.2rem;
+}
+.ReactModal__Content--after-open .noteModal {
+  margin: auto;
+  margin-top: 20%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+.modalPreset {
+  background-color: transparent;
+  margin: unset;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000040;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00000050;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00000055;
+}
